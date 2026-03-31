@@ -9,7 +9,6 @@ and derives actionable strategies through data-driven insights and what-if simul
 #3. Exploratory Analysis
 ##3.1. Optimizing Marketing ROI through Customer Segmentation and Channel Strategy
 <img width="640" height="480" alt="channel_roi_vs_conversion" src="https://github.com/user-attachments/assets/f2853ee2-ef83-4006-90c2-bc716db312d6" />
-
 **Result**
 - Email shows the highest ROI with relatively low conversion rate  
 - SMS has the highest conversion rate with moderate ROI  
@@ -94,5 +93,32 @@ and derives actionable strategies through data-driven insights and what-if simul
 - Certain channel–segment combinations generate consistent losses  
 - Budget reallocation and targeting are critical for ROI optimization  
 
-즉, email은 효율 채널, sms는 전환 채널, phone은 개선 대상이다
+## What-if Simulation Results
+<img width="640" height="480" alt="whatifscenario" src="https://github.com/user-attachments/assets/abe47e12-0123-4d40-9977-a5f02bc678b5" />
 
+|index|scenario|total\_cost|total\_revenue|ROI|ROI\_change|
+|---|---|---|---|---|---|
+|0|Current|304498\.5|264450\.0|0\.868477184616673|0\.0|
+|1|Remove Negative ROI|27394\.9|263800\.0|9\.629529583973659|8\.761052399356986|
+|2|Campaign Cap \(\<=3\)|141637\.3|229000\.0|1\.616805742555104|0\.7483285579384309|
+|3|Remove Phone|74203\.49999999999|166550\.0|2\.244503291623711|1\.3760261070070379|
+|4|Top 20% Focus|3180\.0|18900\.0|5\.943396226415095|5\.074919041798422|
+
+### 🔍 Interpretation
+
+The simulation results reveal that removing inefficient segments and channels has a significant impact on overall marketing performance.
+
+Eliminating negative ROI segments resulted in the most dramatic improvement, increasing ROI from 0.87 to 9.63, indicating that loss-making activities were the primary factor reducing profitability.
+
+Limiting campaign frequency to three contacts improved ROI to 1.62, confirming that excessive customer contact leads to diminishing returns.
+
+Removing the Phone channel further increased ROI to 2.24, suggesting that it is a cost-inefficient channel despite its relatively high conversion rate.
+
+Focusing only on the top 20% of segment–channel combinations yielded a high ROI of 5.94, demonstrating the effectiveness of targeted marketing strategies.
+
+### 💡 Implications
+
+- Loss-making segments significantly dilute overall ROI and should be prioritized for removal  
+- Excessive campaign exposure reduces efficiency and should be controlled  
+- Cost-inefficient channels (e.g., Phone) require optimization or budget reduction  
+- Targeted investment in high-performing segment–channel combinations leads to substantial ROI improvement  
